@@ -110,6 +110,8 @@ html, body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+
 @media (max-width: 925px) {
   #split-pane-or {
     top:15%;

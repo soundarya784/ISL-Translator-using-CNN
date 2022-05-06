@@ -12,34 +12,37 @@
     <script src="{% static 'user/css/index.js' %}"></script>
 </head>
 <body style="background-image: url({% static 'user/images/login3.jpg' %});">
-    <nav class="navbar navbar-expand-lg navbar-dark static-top" style="background-color: rgb(109,0,0);">
-        <img src="{% static 'aud2gest/images/logo3.png' %}" height="45px" width="45px" style="">
-        <div class="container">
-          <a class="navbar-brand" href="../home">Koe No Katachi</a>
+    <nav class="navbar navbar-expand-lg navbar-dark static-top" style="background-color: rgb(3, 11, 34); height: 72px;" >
+        <a href="../index"><img src="{% static 'aud2gest/images/logo3.png' %}"  width="45px" ></a>
+        <div class="container" style="margin-left: 10px;">
+          <a class="navbar-brand" href="../home">ISL Translator</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item ">
-                <a class="nav-link" href="../about_team">About Our Team
-                </a>
-              </li>
+          <div class="collapse navbar-collapse" id="navbarResponsive" style="margin-left: 80%;">
+            <ul class="navbar-nav ml-auto" >
+                <li class="nav-item">
+                    <a class="nav-link" href="../index">Dashboard</a>
+                  </li>
               <li class="nav-item">
-                <a class="nav-link" href="../about_project">About Our Project</a>
+                <a class="nav-link" href="../about_project">About </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../instruction">Instructions</a>
               </li>
               {% if user.is_authenticated %}
-              <li class="nav-item">
-                <a class="nav-link" href="../logout">Logout</a>
-              </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../logout">Logout</a>
+                  </li>
+                  {% else %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="../login">Login</a>
+                  </li>
               {% endif %}
             </ul>
           </div>
         </div>
-    </nav>
+      </nav>
 <div class="container" >
     <div class="row">
         <div class="col-md-1"></div>

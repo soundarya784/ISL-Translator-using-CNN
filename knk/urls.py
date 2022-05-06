@@ -34,6 +34,7 @@ urlpatterns = [
 	path('webcam/', gest_view.take_snaps, name="webcam"),
 	path('gest_keyboard/', gest_view.gest_keyboard, name="gest_keyboard"),
 	path('logout/', user_view.logout_user, name="logout"),
-	path('emergency/', gest_view.emergency, name='emergency')
+	path('emergency/', gest_view.emergency, name='emergency'),
+	path('convertLangauge/', gest_view.language_convert, name='language_convert')
 
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

@@ -8,30 +8,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Creative - Start Bootstrap Theme</title>
+  <title>DASHBOARD</title>
 
   <link href="{% static 'aud2gest/css/creative.min.css' %}" rel="stylesheet">
 </head>
 
 <body id="page-top" style="overflow-x: hidden; overflow-y: hidden;background-image: url({% static 'aud2gest/images/check.jpg' %});">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" style="">
-	<a href="../index"><img src="{% static 'aud2gest/images/logo3.png' %}" height="45px" width="45px" style=""></a>
-    <div class="container" style="">
-      <a class="navbar-brand js-scroll-trigger" href="https://www.iiitm.ac.in/index.php/en/">ABV-IIITM</a>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+  <nav class="navbar navbar-expand-lg navbar-dark static-top" style=" height: 72px;" >
+    <a href="../index"><img src="{% static 'aud2gest/images/logo3.png' %}"  width="45px" ></a>
+    <div class="container" style="margin-left: 10px;">
+      <a class="navbar-brand" href="../home">ISL Translator</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" style="margin-left: 80%;">
+        <ul class="navbar-nav ml-auto" >
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../about_team">About Our Team</a>
+            <a class="nav-link" href="../index">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../about_project">About Our Project</a>
+            <a class="nav-link" href="../about_project">About </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../instruction">Instructions</a>
+            <a class="nav-link" href="../instruction">Instructions</a>
           </li>
           {% if user.is_authenticated %}
               <li class="nav-item">
                 <a class="nav-link" href="../logout">Logout</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                <a class="nav-link" href="../login">Login</a>
               </li>
           {% endif %}
         </ul>

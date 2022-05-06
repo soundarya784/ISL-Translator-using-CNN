@@ -128,7 +128,7 @@ MEDIA_URL='/media/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 EMAIL_HOST="smtp.gmail.com"
-EMAIL_HOST_USER="tempuxyz@gmail.com"
-EMAIL_HOST_PASSWORD="pythoniscool"
+EMAIL_HOST_USER=""
+EMAIL_HOST_PASSWORD=""
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
